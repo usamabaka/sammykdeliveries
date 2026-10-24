@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact us | Sammy K Delivery Company</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--black:#000;--ink:#1b1b1b;--green:#0f7b3f;--green-d:#0a5c2f;--red:#c8102e;--gold:#c9a227;--gold-l:#e8cd6e;--paper:#f7f5ef;--line:#ddd8c8}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
+a{color:var(--green)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.stripe{height:5px;background:linear-gradient(90deg,var(--black) 0 25%,var(--gold) 25% 50%,var(--red) 50% 75%,var(--green) 75% 100%)}
+header{background:var(--black);border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+nav{max-width:1150px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:6px 26px;padding:12px 20px}
+.logo{margin-right:auto;text-decoration:none;color:#fff;font-family:Georgia,serif;font-size:1.45rem;font-weight:bold;line-height:1.1}
+.logo small{display:block;color:var(--gold-l);font:600 .68rem "Segoe UI",Arial,sans-serif;letter-spacing:.14em}
+nav a.link{color:#fff;text-decoration:none;padding:6px 2px;border-bottom:2px solid transparent}
+nav a.link:hover,nav a.link.active{color:var(--gold-l);border-bottom-color:var(--gold)}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:12px 26px;border-radius:4px;border:2px solid transparent;cursor:pointer;font-size:1rem;font-family:inherit}
+.btn.gold{background:var(--gold);color:#000}.btn.gold:hover{background:var(--gold-l)}
+.btn.green{background:var(--green);color:#fff}.btn.green:hover{background:var(--green-d)}
+.btn.red{background:var(--red);color:#fff}.btn.red:hover{background:#a50d26}
+.btn.line{border-color:var(--gold);color:var(--gold-l);background:transparent}.btn.line:hover{background:var(--gold);color:#000}
+.btn.sm{padding:7px 16px;font-size:.92rem}
+.hero{background:var(--black);color:#fff;border-bottom:5px solid var(--green)}
+.hero .in{max-width:1150px;margin:0 auto;padding:64px 20px;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2rem,4.4vw,3.2rem);margin-bottom:16px}
+.hero p{color:#d8d8d8;max-width:520px;margin-bottom:26px;font-size:1.08rem}
+.hero .acts{display:flex;flex-wrap:wrap;gap:14px}
+.hero svg{width:100%;height:auto;display:block;border-radius:8px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:30px;color:var(--gold-l);font-size:.95rem;font-weight:600}
+.facts span::before{content:"";display:inline-block;width:9px;height:9px;background:var(--red);border-radius:50%;margin-right:8px}
+.page-title{background:var(--black);color:#fff;border-bottom:5px solid var(--green)}
+.page-title .in{max-width:1150px;margin:0 auto;padding:48px 20px}
+.page-title h1{font-size:clamp(1.9rem,4vw,2.7rem)}
+.page-title p{color:#ccc;margin-top:8px;max-width:620px}
+.wrap{max-width:1150px;margin:0 auto;padding:60px 20px}
+.band{background:var(--paper)}
+h2.sec{font-size:clamp(1.6rem,3vw,2.1rem);margin-bottom:8px}
+.lead{color:#555;max-width:620px;margin-bottom:30px}
+.gold-rule{width:64px;height:4px;background:var(--gold);margin:12px 0 22px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.svc{background:#fff;border:1px solid var(--line);border-left:5px solid var(--green);padding:24px;border-radius:4px}
+.svc:nth-child(2){border-left-color:var(--gold)}.svc:nth-child(3){border-left-color:var(--red)}.svc:nth-child(4){border-left-color:var(--black)}
+.svc svg{width:46px;height:46px;margin-bottom:12px}
+.svc h3{font-size:1.2rem;margin-bottom:6px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;counter-reset:s}
+.step{position:relative;padding:26px 24px 24px 24px;background:#fff;border-top:4px solid var(--gold);border-radius:4px;border-left:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:-20px;left:20px;width:38px;height:38px;border-radius:50%;background:var(--red);color:#fff;font:700 1.1rem Georgia,serif;display:grid;place-items:center}
+.step h3{margin:8px 0 6px;font-size:1.15rem}
+.panel{padding:34px;border-radius:4px;color:#fff}
+.panel.k{background:var(--black);border-top:5px solid var(--gold)}
+.panel.g{background:var(--green);border-top:5px solid var(--gold)}
+.panel h3{font-size:1.5rem;margin-bottom:10px;color:var(--gold-l)}
+.account{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.box{background:#fff;border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:4px;padding:28px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.tabs{display:flex;margin-bottom:20px;border-bottom:2px solid var(--line)}
+.tabs button{flex:1;background:none;border:none;padding:12px;font:700 1rem "Segoe UI",Arial,sans-serif;cursor:pointer;color:#666;border-bottom:3px solid transparent;margin-bottom:-2px}
+.tabs button[aria-selected=true]{color:var(--green);border-bottom-color:var(--red)}
+form{display:grid;gap:14px}
+label{font-weight:600;font-size:.93rem;display:block;margin-bottom:4px}
+input,select,textarea{width:100%;padding:11px 12px;border:1px solid #aaa;border-radius:4px;font:inherit;background:#fff}
+input:focus,select:focus,textarea:focus{border-color:var(--green)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.msg{display:none;padding:12px 14px;border-radius:4px;background:#e8f5ec;border-left:5px solid var(--green);font-size:.95rem}
+.small{font-size:.9rem;color:#555}
+fieldset{border:1px solid var(--line);border-radius:4px;padding:20px;display:grid;gap:14px}
+legend{font:700 1.1rem Georgia,serif;padding:0 10px;color:var(--green-d)}
+.pays{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.pay{position:relative}
+.pay input{position:absolute;opacity:0}
+.pay .p{display:block;border:2px solid var(--line);border-radius:6px;padding:14px;cursor:pointer;height:100%}
+.pay .p b{display:block;font-size:1rem}.pay .p span{font-size:.85rem;color:#555}
+.pay input:checked + .p{border-color:var(--gold);background:#fffaf0;box-shadow:inset 5px 0 0 var(--green)}
+.pay input:focus-visible + .p{outline:3px solid var(--gold)}
+.cols{display:grid;grid-template-columns:1fr 1.7fr;gap:40px;align-items:start}
+.info div{padding:16px 0;border-bottom:1px solid var(--line)}
+.info b{display:block;color:var(--green-d)}
+footer{background:var(--black);color:#cfcfcf;border-top:4px solid var(--gold)}
+footer .in{max-width:1150px;margin:0 auto;padding:44px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:30px}
+footer h4{color:var(--gold-l);font-family:Georgia,serif;margin-bottom:10px;font-size:1.05rem}
+footer a{color:#fff;text-decoration:none}footer a:hover{color:var(--gold-l)}
+footer li{list-style:none;margin-bottom:6px}
+footer .copy{border-top:1px solid #333;text-align:center;padding:16px;font-size:.88rem}
+@media(max-width:820px){.hero .in,.account,.cols{grid-template-columns:1fr}.two{grid-template-columns:1fr}.hero .in{padding:44px 20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="stripe"></div>
+<header>
+  <nav aria-label="Main">
+    <a class="logo" href="index.html">Sammy K<small>DELIVERY COMPANY</small></a>
+    <a class="link" href="index.html">Home</a>
+    <a class="link" href="aboutus.html">About us</a>
+    <a class="link active" href="contactus.html">Contact us</a>
+    <a class="btn line sm" href="home.html#account" data-tab="login">Log in</a>
+    <a class="btn gold sm" href="home.html#account" data-tab="signup">Sign up</a>
+  </nav>
+</header>
+
+<section class="page-title"><div class="in"><h1>Contact us</h1><p>Request a delivery, tell us where to go, and choose how you will pay.</p></div></section>
+
+<section class="wrap">
+  <div class="cols">
+    <aside class="info">
+      <h2 class="sec">Get in touch</h2><div class="gold-rule"></div>
+      <div><b>Address</b>Gaza street, Kawempe town</div>
+      <div><b>Phone</b>+256 743 696 190</div>
+      <div><b>Email</b>usamabaka31@gmail.com</div>
+      <div><b>Opening hours</b>Monday to Saturday, 7:00 am to 6:00 pm</div>
+      <p class="small" style="margin-top:14px">Replace the details above with your real contact information.</p>
+    </aside>
+
+    <form id="order" class="box" data-msg="Delivery request received. We will contact you shortly to confirm.">
+      <fieldset>
+        <legend>1. Your details</legend>
+        <div class="two">
+          <div><label for="n">Full name</label><input id="n" name="name" required autocomplete="name"></div>
+          <div><label for="ph">Phone number</label><input id="ph" type="tel" name="phone" required autocomplete="tel"></div>
+        </div>
+        <div><label for="em">Email (optional)</label><input id="em" type="email" name="email" autocomplete="email"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Your location</legend>
+        <div><label for="pu">Pickup address</label><input id="pu" name="pickup" placeholder="Where should we collect the item?" required></div>
+        <div><label for="dr">Delivery address</label><input id="dr" name="dropoff" placeholder="Where should we deliver it?" required></div>
+        <div class="two">
+          <div><label for="ar">Area or town</label><input id="ar" name="area" required></div>
+          <div><label for="lm">Nearby landmark</label><input id="lm" name="landmark" placeholder="e.g. next to the market"></div>
+        </div>
+        <div>
+          <button type="button" class="btn green sm" id="geo">Use my current location</button>
+          <input type="hidden" name="lat" id="lat"><input type="hidden" name="lng" id="lng">
+          <p class="small" id="geo-out" style="margin-top:8px" role="status"></p>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. What are we delivering?</legend>
+        <div><label for="ty">Item type</label>
+          <select id="ty" name="type"><option>Parcel</option><option>Food</option><option>Documents</option><option>Business delivery</option></select></div>
+        <div><label for="no">Notes for the rider (optional)</label><textarea id="no" name="notes" rows="3"></textarea></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Payment way</legend>
+        <div class="pays">
+          <label class="pay"><input type="radio" name="pay" value="momo" checked><span class="p"><b>Mobile Money</b><span>Pay from your phone wallet</span></span></label>
+          <label class="pay"><input type="radio" name="pay" value="payway"><span class="p"><b>Payway</b><span>Pay online with Payway</span></span></label>
+          <label class="pay"><input type="radio" name="pay" value="card"><span class="p"><b>Debit or credit card</b><span>Visa or Mastercard</span></span></label>
+          <label class="pay"><input type="radio" name="pay" value="cash"><span class="p"><b>Cash on delivery</b><span>Pay the rider on arrival</span></span></label>
+        </div>
+        <div id="payno"><label for="pn">Mobile Money number</label><input id="pn" type="tel" name="paynumber" placeholder="Number to pay from"></div>
+      </fieldset>
+
+      <button class="btn red" type="submit">Place delivery request</button>
+      <p class="msg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="in">
+    <div><h4>Sammy K Delivery Company</h4><p>Fast, safe and reliable delivery for individuals and businesses.</p></div>
+    <div><h4>Quick links</h4><ul><li><a href="home.html">Home</a></li><li><a href="aboutus.html">About us</a></li><li><a href="contactus.html">Contact us</a></li><li><a href="home.html#account">Log in / Sign up</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>Phone: +000 000 000 000</li><li>Email: info@sammykdelivery.com</li><li>Address: Your street, your town</li></ul></div>
+    <div><h4>Ways to pay</h4><ul><li>Mobile Money</li><li>Payway</li><li>Debit or credit card</li><li>Cash on delivery</li></ul></div>
+  </div>
+  <div class="copy">&copy; 2026 Sammy K Delivery Company. All rights reserved.</div>
+</footer>
+
+<script>
+(function(){
+  var f=document.getElementById('order');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var m=f.querySelector('.msg');m.style.display='block';m.textContent=f.getAttribute('data-msg');
+    m.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+  var out=document.getElementById('geo-out');
+  document.getElementById('geo').addEventListener('click',function(){
+    if(!navigator.geolocation){out.textContent='Location is not available in this browser. Please type your address.';return;}
+    out.textContent='Finding your location...';
+    navigator.geolocation.getCurrentPosition(function(p){
+      document.getElementById('lat').value=p.coords.latitude;
+      document.getElementById('lng').value=p.coords.longitude;
+      out.textContent='Location saved. Please still confirm your delivery address above.';
+    },function(){out.textContent='We could not get your location. Please type your address instead.';});
+  });
+  var box=document.getElementById('payno'),lab=box.querySelector('label'),inp=box.querySelector('input');
+  var labels={momo:'Mobile Money number',payway:'Payway account or phone number',card:null,cash:null};
+  f.querySelectorAll('input[name=pay]').forEach(function(r){
+    r.addEventListener('change',function(){
+      var t=labels[r.value];
+      box.style.display=t?'block':'none';
+      if(t){lab.textContent=t}
+    });
+  });
+})();
+</script>
+</body>
+</html>
